@@ -1,0 +1,29 @@
+<% include partials/header %>
+
+<div class="container">
+    <header class = jumbotron>
+        <h1>Enter your data</h1>
+    </header>
+
+    <form action="/mydata" method="POST">
+        Weight:<br>
+        <input type="text" placeholder = "Weight" name="weight" value=""><br>
+        Height:<br>
+        <input type="text" placeholder = "Height" name="height" value=""><br>
+        Body Mass Index: <br>
+        <input type="text" placeholder = "BMI" name="bmi" value=""><br>
+        Sleep Patterns: <br>
+        <input type="text" placeholder = "SleepPatterns" name="spatterns" value=""><br>
+        Cholesterol level: <br>
+        <input type="text" placeholder = "Cholesterol" name="cholesterol" value=""><br>
+        Blood Sugar: <br>
+        <input type="text" placeholder = "BloodSugar" name="bsugar" value=""><br>
+        Blood Pressure: <br>
+        <input type="text" placeholder = "BloodPressure" name="bp" value=""><br>
+        <button>Submit</button>
+    </form>
+</div>
+
+<a href="/">Home</a>
+
+<%include partials/footer%>

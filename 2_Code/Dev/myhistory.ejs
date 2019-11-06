@@ -1,0 +1,26 @@
+<% include partials/header %>
+
+<div class="container">
+    <header class="jumbotron">
+        <h1>Welcome to HealthColate+</h1>
+        <p>Your history</p>
+    </header>
+
+    <% myHistory.forEach(function(data){ %>
+        <div class="">
+            <h4><%=data.dateAndTime%></h4>
+            <li>Weight: <%=data.weight%> kg</li>
+            <li>Height: <%=data.height%> ft</li>
+            <li>BMI(Body Mass Index): <%=data.bmi%></li>
+            <li>Sleep Patterns: <%=data.sleepPatterns%> hours of sleep</li>
+            <li>Cholesterol: <%=data.cholesterol%></li>
+            <li>Blood Sugar: <%=data.bloodSugar%></li>
+            <li>Blood Pressure: <%=data.bloodPressure%> bpm</li>
+        </div>
+
+          <% });%>
+</div>
+
+<a href="/">Home</a>
+
+<% include partials/footer %>

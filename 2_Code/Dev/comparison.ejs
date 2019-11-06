@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HealthColate+</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+<h1>This is the comparison page</h1>
+
+<p>Comparisons will be shown here</p>
+<div id="tester" style="width:600px;height:250px;"></div>
+<script>
+  myData.forEach(function(data){
+    if(data.timeStamp == max){
+    var w = data.weight;
+    var avgW = avgData.avgWeight;
+	TESTER = document.getElementById('tester');
+	Plotly.plot( TESTER, [{
+	x: [w],
+	y: [avgW],
+  type: "bar" }], {
+	margin: { t: 0 } } );
+   }
+   console.log(data.weight);
+   console.log(data.avgAge);
+</script>
+
+<a href="/">Home</a>
+
+<% include partials/footer %>
